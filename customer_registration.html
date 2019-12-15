@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="customer_registration.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/customer_registration.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <style>
+  .top{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    box-shadow: 5px 5px 5px 5px #888888;
+    margin: 10px 600px 500px  ;
+    
+  }
+
+  </style>
+
+
+</head>
+<body>
+<center>
+<form action="/customer_registration" method="post">
+  <div class="top">
+    <h1> Customer Registration</h1>
+    <h3>Please Fill In This Form To Create An Account.</h3>
+    <hr>
+
+
+
+    <input type="text" placeholder="Enter Full Name" name="fullname" required><br>
+
+
+
+    <input type="text" placeholder="Enter Username" name="uname" required><br>
+
+
+
+
+    <input type="tell" placeholder="Enter Mobile Number" name="Mobile" required><br>
+
+
+
+
+
+    <input type="text" placeholder="Enter Email" name="email" required><br>
+
+
+
+    <input type="password" placeholder="Enter Password" name="psw" required><br>
+
+
+
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br>
+    <hr>
+    <p>By Creating An Account You Agree To Our <a href="policy.html"><b>TERMS & PRIVACY</a>.</p><br>
+
+    <button type="submit" class="btn btn-secondary" onclick="myfunction()">REGISTER</button><br>
+    <script>
+function myfunction() {
+  location.replace("customer_login.html")
+}
+</script>
+  </div>
+
+  <div class="container signin">
+    <h3>Already Have An Account?</h3><p> <a href="customer_login.html">LOG IN</a>.</P>
+  </div>
+</form>
+<center>
+</body>
+</html>
